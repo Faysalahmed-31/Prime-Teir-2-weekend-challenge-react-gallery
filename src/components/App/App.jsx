@@ -29,7 +29,7 @@ function App() {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Gallery of My Life</h1>
+          <strong><h1 className="App-title">Photos of My Life</h1></strong>
         </header>
         {/* <p>Gallery goes here</p> */}
         {/* <img src="images/goat_small.jpg"/> */}
