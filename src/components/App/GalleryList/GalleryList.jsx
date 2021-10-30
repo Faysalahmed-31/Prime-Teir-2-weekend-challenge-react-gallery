@@ -6,7 +6,7 @@ function GalleryList( props ){
     return(
         <div>
             <h1>GalleryList</h1>
-            <GalleryItems galleryItems = {props.galleryItems}/>
+            { props.galleryItems.map( imageItems=>(<GalleryItems imageTosend={imageItems}/>))} 
         </div>
     )
 }
