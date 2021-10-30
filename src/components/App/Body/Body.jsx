@@ -5,7 +5,7 @@ function Body( props ){
     // const[name, setName]= useState( null );
     return(
         <div>
-            <h1>Body</h1>
+            {/* <h1>Body</h1> */}
             <GalleryList galleryItems = {props.galleryItems}/>
         </div>
     )
