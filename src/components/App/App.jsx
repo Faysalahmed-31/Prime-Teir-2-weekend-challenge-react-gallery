@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import axios from 'axios';
 import { useEffect, useState } from "react";
+import Body from './Body/Body';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
         </header>
         <p>Gallery goes here</p>
         <img src="images/goat_small.jpg"/>
+        <Body galleryItems = {galleryItems}/>
       </div>
     );
 }
