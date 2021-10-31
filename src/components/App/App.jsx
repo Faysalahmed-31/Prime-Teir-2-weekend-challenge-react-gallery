@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 import axios from 'axios';
 import { useEffect, useState } from "react";
-import Body from './Body/Body';
+// import Body from './Body/Body';
+import GalleryList from './GalleryList/GalleryList';
 
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
     getItems();
   }, []);
 
+
+
   const getItems=()=>{
     axios.get( '/gallery' ).then( (response)=>{
       console.log(response.data);
@@ -23,9 +26,19 @@ function App() {
       console.log(err);
     })
   }
+  const updateLikes = (imagesLikedId)=>{
+    axios({
+      method: 'PUT',
+      url: `/gallery/like/ ${imagesLikedId}`,
+    }).then((response)=>{
+     getItems();
   
-  
-
+    }).catch((error)=>{
+     alert('liking in the an image');
+     console.log(error())
+    })
+    
+  }
     return (
       <div className="App">
         <header className="App-header">
@@ -33,7 +46,7 @@ function App() {
         </header>
         {/* <p>Gallery goes here</p> */}
         {/* <img src="images/goat_small.jpg"/> */}
-        <Body galleryItems = {galleryItems}/>
+        < GalleryList galleryItems= {galleryItems} updateLikes={updateLikes} />
       </div>
     );
 }

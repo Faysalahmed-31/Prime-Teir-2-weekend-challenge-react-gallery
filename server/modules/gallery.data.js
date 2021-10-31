@@ -7,7 +7,7 @@ const galleryItems = [
      },
 
      { id: 2, 
-      path: 'https://www.juventus.com/images/image/private/t_portrait_mobile/dev/t5mex3dyn30xi3ox6ii5.jpg' , 
+      path: 'images/goat_small.jpg', 
       description: 'Photo of a goat taken at Glacier National Park.',
       likes: 0 
      },
@@ -27,22 +27,22 @@ const galleryItems = [
       description: 'Photo of a goat taken at Glacier National Park.', 
       likes: 0 
      },
-     { id: 5, 
+     { id: 6, 
       path: 'images/goat_small.jpg', 
       description: 'Photo of a goat taken at Glacier National Park.', 
       likes: 0 
      },
-     { id: 5, 
+     { id: 7, 
       path: 'images/goat_small.jpg', 
       description: 'Photo of a goat taken at Glacier National Park.', 
       likes: 0 
      },
-     { id: 5, 
+     { id: 8, 
       path: 'images/goat_small.jpg', 
       description: 'Photo of a goat taken at Glacier National Park.', 
       likes: 0 
      },
-     { id: 5, 
+     { id: 9, 
       path: 'images/goat_small.jpg', 
       description: 'Photo of a goat taken at Glacier National Park.', 
       likes: 0 
