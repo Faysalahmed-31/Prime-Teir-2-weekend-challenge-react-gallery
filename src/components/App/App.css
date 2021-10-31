@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: rgba(31, 9, 224, 0.884);
   padding: 1em;
   color: white;
   margin-bottom: 1em;
@@ -13,14 +13,28 @@
   font-size: 1.5em;
 }
 
-.imageList{
-  grid-column-start: 1;
-  grid-column-end: 3;
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 13px;
+.likeButton{
+ font-size: 1em;
+ color: white;
+ background-color: blue;
+ border-radius: 2em;
+
 }
+
+.imageList{
+  display: grid;
+  height: 0px;
+  /* align-content: space-evenly; */
+  grid-template-columns: auto auto auto; 
+  grid-gap: 1px;
+  background-color: #2196F3;
+  padding: 1px;
+}
+.likes{
+  color: blue;
+  background-color: white;
+}
+
   
 
 
