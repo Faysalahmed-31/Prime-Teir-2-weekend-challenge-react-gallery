@@ -18,11 +18,12 @@ function GalleryItems( props){
 
     return(
        
-        <div >
-             {showimage && <img onClick={ toggleShow }  src = {props.imageToSend.path} alt ={props.imageToSend.description}/> } 
+        <div className = "images">
+             {showimage && <img width = "190" height = "200" onClick={ toggleShow }  src = {props.imageToSend.path} alt ={props.imageToSend.description}/> } 
             { showDescription && <p onClick={ toggleShow }> {props.imageToSend.description}</p>}
             <div>
              <button className="likeButton" onClick={() =>changeLikes (props.imageToSend.id)}> Like 👍🏻  </button> 
+             <button className = "commentImages ">Comment</button>
              <h4 className = "likes">How many people love this: { props.imageToSend.likes }</h4>
              </div>
         </div>
